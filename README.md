@@ -2,6 +2,10 @@
 
 A web-based tool for 3D experience creators to visualize navigation algorithms on terrain in real time.
 
+## Page
+
+https://foundway.github.io/NavViz/
+
 ## Stack
 
 - Vite + React 18 + TypeScript
