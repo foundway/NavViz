@@ -1,0 +1,14 @@
+Build a professional React web application called 'NavViz' This is a tool for 3D experience creators to visualize what different navigation algorithms do visually.
+
+Use your intrinsic and [this external](https://github.com/anthropics/claude-code/blob/main/plugins/frontend-design/skills/frontend-design/SKILL.md) front-end skills to design a clean, professional, easy-to-use, UI/UX
+
+Consideration:
+
+* All views are responsive for mobile, tablet and desktop screens
+* Use Google Fonts
+* Use Lucide icons
+# Follow the attached design system references
+
+When finished, provide localhost URLs to preview the results
+
+Start by asking me clarifying questions to inform your plan.
