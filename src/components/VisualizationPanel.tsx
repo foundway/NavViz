@@ -30,11 +30,11 @@ const SIZE_OPTIONS = [32, 64, 128]
 
 const overlayRow = 'flex items-center gap-2 min-h-[28px] text-[12px]'
 const overlayLabel = 'shrink-0 text-[#cccccc] w-[100px]'
-const overlayControl = 'flex-1 min-w-0 flex items-center justify-start text-left min-h-[24px]'
+const overlayControl = 'flex-1 min-w-0 flex items-center justify-start text-left min-h-[22px]'
 const overlayValueBox =
   'shrink-0 min-w-[44px] h-[22px] rounded-[2px] border border-[#313131] px-2 py-0.5 text-left text-[12px] tabular-nums text-[#cccccc] bg-[#424242]'
 const overlaySelect =
-  'm-0 w-full min-h-[22px] rounded-sm border border-[#313131] bg-[#464646] px-1.5 py-0.5 text-left text-[12px] text-[#cccccc] outline-none focus:border-[#3F99F7] justify-start items-start'
+  'm-0 w-full h-[22px] min-h-[22px] rounded-sm border border-[#313131] bg-[#464646] px-1.5 py-0.5 text-left text-[12px] text-[#cccccc] outline-none focus:border-[#3F99F7] justify-start items-start'
 
 export function VisualizationPanelContent({
   colorMode,
@@ -75,7 +75,7 @@ export function VisualizationPanelContent({
           >
             {SIZE_OPTIONS.map((s) => (
               <option key={s} value={s}>
-                {s}×{s}
+                {`${s} x ${s}`}
               </option>
             ))}
           </Select>

@@ -44,8 +44,14 @@ npm run preview
    Replace `YOUR_USERNAME` with your GitHub username.
 
 3. **Enable GitHub Pages:**  
-   Repo → **Settings** → **Pages** → Source: **GitHub Actions**.  
+   Repo → **Settings** → **Pages** → under **Build and deployment**, set **Source** to **GitHub Actions**.  
    After the next push (or a re-run of the workflow), the app will be at **https://YOUR_USERNAME.github.io/NavViz/**.
+
+**If the site doesn’t appear:**
+- Open the **Actions** tab; run the **Deploy to GitHub Pages** workflow and fix any errors.
+- In **Settings → Pages**, ensure **Source** is **GitHub Actions** (not “Deploy from a branch”).
+- Use the exact URL including the trailing slash: `https://USERNAME.github.io/NavViz/`.
+- Wait a few minutes after a successful workflow run; GitHub Pages can take a short time to update.
 
 ## Features
 

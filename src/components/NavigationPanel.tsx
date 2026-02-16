@@ -21,16 +21,16 @@ export interface NavigationPanelProps {
 }
 
 const ALGORITHM_OPTIONS: { value: Algorithm; label: string }[] = [
-  { value: 'astar', label: 'A* (Shortest + Cost)' },
-  { value: 'dijkstra', label: 'Dijkstra (Uniform Search)' },
+  { value: 'astar', label: 'A*' },
+  { value: 'dijkstra', label: 'Dijkstra' },
   { value: 'greedy', label: 'Greedy Best-First' },
-  { value: 'straight', label: 'Straight Line (Surface)' },
-  { value: 'physics', label: 'Physics (Simulated Path)' },
+  { value: 'straight', label: 'Straight Line' },
+  { value: 'physics', label: 'Physics Simulated' },
 ]
 
 const overlayRow = 'flex items-center gap-2 min-h-[28px] text-[12px]'
 const overlayLabel = 'shrink-0 text-[#cccccc] w-[100px]'
-const overlayControl = 'flex-1 min-w-0 flex items-center justify-start text-left min-h-[24px]'
+const overlayControl = 'flex-1 min-w-0 flex items-center justify-start text-left min-h-[22px]'
 const overlayValueBox =
   'shrink-0 min-w-[44px] h-[22px] rounded-[2px] border border-[#313131] px-2 py-0.5 text-left text-[12px] tabular-nums text-[#cccccc] bg-[#424242]'
 
@@ -101,7 +101,7 @@ export function NavigationPanelContent({
         </div>
       </div>
       <div className={overlayRow + ' border-t border-[#2e2e2e] pt-1 mt-1'}>
-        <label className={overlayLabel}>Path length</label>
+        <label className={overlayLabel}>Path Length</label>
         <span className={overlayControl + ' justify-end text-[#cccccc] tabular-nums'}>{pathLength.toFixed(1)} m</span>
       </div>
     </div>

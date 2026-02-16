@@ -108,7 +108,7 @@ export function PathOverlay({ path, start, end }: PathOverlayProps) {
           <mesh geometry={tubeGeometry}>
             <meshBasicMaterial color="white" />
           </mesh>
-          <mesh geometry={tubeGeometry}>
+          <mesh geometry={tubeGeometry} renderOrder={0}>
             <meshBasicMaterial
               color="white"
               transparent
@@ -135,11 +135,13 @@ export function PathOverlay({ path, start, end }: PathOverlayProps) {
       {endPos && (
         <mesh
           position={[endPos.x, endPos.y + PATH_LIFT, endPos.z]}
-          renderOrder={2}
+          renderOrder={1}
         >
           <sphereGeometry args={[MARKER_RADIUS, 16, 16]} />
           <meshBasicMaterial
             color={END_COLOR}
+            transparent={false}
+            opacity={1}
             depthTest={false}
             depthWrite={false}
           />
