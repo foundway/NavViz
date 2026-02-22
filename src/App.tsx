@@ -52,10 +52,9 @@ export default function App() {
 
   return (
     <div className="flex h-screen flex-col bg-[#1a1a1a]">
-      <header className="flex shrink-0 items-center justify-between border-b border-[#2e2e2e] bg-[rgba(30,30,30,0.8)] px-4 py-2">
-        <div className="flex items-center gap-2">
-          <span className="h-2.5 w-2.5 rounded-full bg-blue-500" />
-          <h1 className="text-lg font-bold text-gray-100">NavViz</h1>
+      <header className="flex shrink-0 items-center justify-between border-b border-[#2e2e2e] bg-[rgba(53,53,53,0.8)] px-4 py-2">
+        <div className="flex items-center p-1">
+          <h1 className="text-sm font-bold text-gray-100">Pathfinding Visualizer</h1>
         </div>
       </header>
 
@@ -111,6 +110,22 @@ export default function App() {
           />
         </main>
       </div>
+
+      <footer className="flex shrink-0 items-center justify-between border-t border-[#2e2e2e] bg-[#2a2a2a] px-4 py-2">
+        <button
+          type="button"
+          className="flex h-8 w-8 items-center justify-center rounded text-white/90 transition-colors hover:bg-white/10"
+          aria-label="Add"
+        >
+        </button>
+        <button
+          type="button"
+          className="rounded-sm px-6 py-1 text-xs font-medium text-white transition-opacity hover:opacity-90"
+          style={{ backgroundColor: 'rgba(63, 153, 247, 1)' }}
+        >
+          Done
+        </button>
+      </footer>
     </div>
   )
 }

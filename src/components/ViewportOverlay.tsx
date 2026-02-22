@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { ChevronDown, Route, Mountain } from 'lucide-react'
 
-const OVERLAY_BG = '#353535'
+const OVERLAY_BG = 'rgba(53, 53, 53, 1)'
 const OVERLAY_HEADER_BG = '#353535'
 const OVERLAY_TEXT = '#cccccc'
 const OVERLAY_PANEL_BG = '#353535'
